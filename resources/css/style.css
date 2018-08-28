@@ -1,0 +1,330 @@
+html {
+  font-family: helvetica;
+  font-size: 12 px;
+  color: #c8c9c9;
+}
+
+h1,
+ {
+  font-weight: bold;
+}
+
+h1,
+h2,
+h3{
+  color:#4a4a4a;
+}
+p {
+  line-height: 16px;
+  display: block;
+  color: #767676;
+}
+
+h1 {
+  line-height: normal;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+  color: #767676;
+  font-weight: normal;
+}
+
+p {
+  color: #767676;
+}
+
+a:hover {
+  cursor: pointer;
+  color: dodgerblue;
+  transition: color, 1s, ease-in, 0.3s;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  /*max-width: 1200px;*/
+  padding-left: 24px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  position: relative;
+}
+
+header {
+  height: 4rem;
+  width: 100%;
+  background-color: white;
+  opacity: 0.95;
+  position: fixed;
+  z-index: 10;
+  transition: opacity, 1s, ease-out, 0.2s;
+}
+
+header:hover {
+  opacity: 1;
+  transition: opacity, 2s, ease-in, 0.2s;
+}
+
+.mobile {
+  display: none;
+}
+
+.logo,
+.copyright {
+  flex-grow: 1;
+}
+
+.logo img {
+  padding-left: 18px;
+  padding-right: 3px;
+}
+
+.colmar {
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  color: black;
+}
+
+.academy {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  color: Silver;
+}
+
+nav li {
+  display: inline-block;
+  padding: 6px;
+}
+
+nav li a {
+  color: #767676;
+}
+
+nav {
+  margin-right: 24px;
+}
+
+/*.lecture*/
+.banner,
+.learning {
+  background-color: #d8d8d8;
+}
+
+.banner img {
+  width: 60%;
+  margin-right: 32px;
+  height: auto;
+}
+
+.banner .title {
+  width: 28%;
+}
+
+.start-btn {
+  background-color: #4a4a4a;
+  justify-content: center;
+  margin: 24px auto;
+  padding: 8px;
+  color: white;
+}
+
+.start-btn:hover {
+  background-color: #666;
+  transition: background-color 0.2s ease-in 0s;
+  cursor: pointer;
+}
+
+.main-section {
+  width: 60%;
+  flex-direction: column;
+  margin-right: 18px;
+}
+
+.main-section img,
+.main-section video {
+  width: 100%;
+  height: auto;
+  padding-bottom: 6px;
+}
+
+#campus,
+.thesis {
+  align-items: flex-start;
+}
+
+.sidebar {
+  width: 480px;
+  flex-direction: column;
+  margin-top: -12px;
+}
+
+.sidebar .item {
+  padding-right: 6px;
+}
+
+.sidebar .item:hover {
+  background-color: #d8d8d8;
+  transition: background-color .1s ease-in 0s;
+}
+
+.sidebar img {
+  width: 35%;
+  height: auto;
+  padding: 12px;
+}
+
+.read-more a {
+  color: dodgerblue;
+}
+
+.learning {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.learning .title,
+.thesis .title {
+  width: 100%;
+  text-align: center;
+  display: block;
+}
+
+.learning .item {
+  height: 316px;
+  width: 25%;
+  margin: 12px;
+  background-color: white;
+}
+
+.learning .item:hover {
+  background-color: silver;
+  transition: all 0.1s ease-in;
+}
+
+.learning img {
+  width: 100%;
+  height: auto;
+}
+
+.learning .content {
+  padding: 0px 16px 24px 16px;
+}
+
+.thesis .title h1 {
+  margin-bottom: -18px;
+}
+
+footer{
+  font-size: 12px;
+  color: silver;
+  border-top: 2px solid whitesmoke;
+}
+
+/*Mobile */
+
+@media only screen and (max-width: 640px) {
+
+  .mobile {
+    display: inline-flex;
+    width: 100%;
+  }
+
+  header .mobile {
+    justify-content: space-around;
+  }
+
+  nav {
+    margin: 0;
+  }
+
+  nav a:hover {
+    cursor: pointer;
+    background-color: #d8d8d8;
+    border-bottom: 2px solid dodgerblue;
+  }
+
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .banner {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .banner img {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .banner .title {
+    width: auto;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+
+  .sidebar,
+  .sidebar img,
+  .sidebar .content {
+    width: 100%;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .sidebar .content {
+    width: 100%;
+    padding-left: 24px;
+  }
+
+  .sidebar .item {
+    flex-direction: column;
+  }
+
+  .learning {
+    background-color: white;
+  }
+
+  .learning .item {
+    height: auto;
+    width: 100%;
+    background-color: #d8d8d8;
+  }
+
+  .learning .item img,
+  .learning .item h4,
+  .learning .item p{
+    display: none;
+  }
+
+
+  .thesis .main-section {
+    width: 100%;
+    justify-content: center;
+    margin-right: 0;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  footer .copyright,
+  footer nav {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
